@@ -17,8 +17,8 @@ $padding-sp: 20px;
 // フォント設定
 ////////////////////
 
-$base-font-family: "";
-$second-font-family: "";
+$base-font-family: "Noto Sans JP";
+$second-font-family: "Noto Serif JP";
 // ※検証ツールでしっかり反映されているか確認する
 
 body {
@@ -38,6 +38,9 @@ $bold: 700;
 $black: #111;
 $white: #fff;
 
+body {
+  color: $white;
+}
 
 ////////////////////
 // メディアクエリとブレークポイントの設定

@@ -1,0 +1,39 @@
+@use "global" as *;
+
+.btn {
+  display: inline-block;
+  padding: rem(10) rem(114);
+  border: $white;
+  background-color: #333333;
+  border: rem(1) solid $white;
+  font-size: rem(20);
+  letter-spacing: 0.02em;
+  position: relative;
+  // overflow: hidden;
+
+  @include mq("md") {
+    font-size: rem(16);
+    padding: rem(3) rem(136);
+    line-height: rem(54);
+  }
+}
+
+.btn:before{
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: -100%;
+  background-color: #333;
+  transition: .3s;
+}
+
+.btn:hover{
+  color: #fff;
+}
+
+.btn:hover:before{
+  left: 0;
+}
