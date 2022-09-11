@@ -9,7 +9,6 @@
   font-size: rem(20);
   letter-spacing: 0.02em;
   position: relative;
-  // overflow: hidden;
 
   @include mq("md") {
     font-size: rem(16);
@@ -18,22 +17,28 @@
   }
 }
 
-.btn:before{
-  content: "";
-  z-index: -1;
-  position: absolute;
+.btn-text {
   width: 100%;
   height: 100%;
+  z-index: 10;
+}
+
+.btn-text:before{
+  content: "";
+  position: absolute;
   top: 0;
-  left: -100%;
-  background-color: #333;
-  transition: .3s;
+  bottom: 0;
+  width: 0;
+  display: block;
+  background-color: $white;
+  z-index: -1;
+  transition: .2s;
 }
 
-.btn:hover{
-  color: #fff;
+.btn-text:hover{
+  color: #333333;
 }
 
-.btn:hover:before{
-  left: 0;
+.btn-text:hover:before{
+  width: 100%;
 }

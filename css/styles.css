@@ -192,25 +192,31 @@ select::-ms-expand {
   }
 }
 
-.btn:before {
-  content: "";
-  z-index: -1;
-  position: absolute;
+.btn-text {
   width: 100%;
   height: 100%;
+  z-index: 10;
+}
+
+.btn-text:before {
+  content: "";
+  position: absolute;
   top: 0;
-  left: -100%;
-  background-color: #333;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  bottom: 0;
+  width: 0;
+  display: block;
+  background-color: #fff;
+  z-index: -1;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
-.btn:hover {
-  color: #fff;
+.btn-text:hover {
+  color: #333333;
 }
 
-.btn:hover:before {
-  left: 0;
+.btn-text:hover:before {
+  width: 100%;
 }
 
 .inner {
@@ -233,5 +239,11 @@ select::-ms-expand {
   font-size: 1.25rem;
   background-color: #111;
   color: #fff;
+}
+
+.to-top {
+  max-width: 45px;
+  max-width: 2.8125rem;
+  width: 100%;
 }
 /*# sourceMappingURL=styles.css.map */
