@@ -8,31 +8,27 @@
   top: 0;
   right: 0;
   z-index: 299;
-  // transform: translateX(105%);
+  transform: translateX(105%);
 
-  // &.drawer-menu{
-  //     transform: translateX(0);
-  // }
+  &.open{
+      transform: translateX(0);
+  }
 }
 
 .sp-nav__items {
-  padding: rem(160) rem(60) rem(170) rem(60);
+  padding: rem(210) 0;
   color: $white;
-  font-size: rem(14);
+  font-size: rem(16);
 }
 
 .sp-nav__item {
   display: flex;
   position: relative;
   justify-content: center;
-
-  img {
-      width: rem(24);
-      height: rem(24);
-  }
+  letter-spacing: 0.1em;
 
   &:not(:first-child){
-    margin-top: rem(32);
+    margin-top: rem(31);
   }
 }
 

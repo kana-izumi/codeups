@@ -5,8 +5,8 @@
   position: relative;
   z-index: 300;
 
-  &.js-drawer-open {
-      .drawer__icon-bar1 {
+  &.open {
+      .drawer__icon-bar1{
           transform: rotate(-45deg);
           top: rem(8);
           background: $white;

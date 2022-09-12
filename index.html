@@ -39,17 +39,17 @@
   </div>
 </div>
 
-<!-- header -->
+<!-- ヘッダー -->
 <header class="header">
-  <div class="header__inner inner">
+  <div class="header__inner">
     <h1 class="logo">
       <a href="#" class="logo__link">
-        <img src="./src/images/common/logo.png" alt="codeupsロゴ">
+        <img src="./src/images/common/logo.svg" alt="ヘッダーロゴ">
       </a>
     </h1>
     <!-- ドロワー -->
     <div class="drawer js-drawer u-mobile">
-      <div class="drawer__icon">
+      <div class="drawer__icon js-drawer-open">
           <div class="drawer__icon-bar1"><a href=""></a></div>
           <div class="drawer__icon-bar2"><a href=""></a></div>
           <div class="drawer__icon-bar3"><a href=""></a></div>
@@ -57,7 +57,7 @@
     </div>
 
     <!-- spナビ -->
-  <div class="sp-nav">
+  <div class="sp-nav drawer-menu">
     <ul class="sp-nav__items">
         <li class="sp-nav__item">
             <a href="">トップ</a>
@@ -87,15 +87,12 @@
     <div class="pc-nav u-desktop">
       <ul class="pc-nav__items">
           <li class="pc-nav__item">
-              <a href="">トップ</a>
-          </li>
-          <li class="pc-nav__item">
               <a href="">お知らせ</a>
           </li>
           <li class="pc-nav__item">
               <a href="">事業内容</a>
           </li>
-          <li class="pc-nav_item">
+          <li class="pc-nav__item">
               <a href="">制作実績</a>
           </li>
           <li class="pc-nav__item">
@@ -104,12 +101,53 @@
           <li class="pc-nav__item">
               <a href="">ブログ</a>
           </li>
-          <li class="pc-nav__item">
+          <li class="pc-nav__item pc-nav__item--white">
+              <a href="">お問い合わせ</a>
+          </li>
+        </ul>
+    </div>
+  </div>
+</header>
+<!-- メインビジュアル -->
+  <div class="mv">
+    <div class="mv-img">
+      <img src="" alt="">
+    </div>
+  </div>
+<!-- フッダー -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer-logo">
+        <a href="#" class="footer__logo__link">
+          <img src="./src/images/common/logo.svg" alt="フッダーロゴ">
+        </a>
+      </div>
+    </div>
+    <div class="sp-footerNav">
+      <ul class="sp-footerNav__items">
+          <li class="sp-footerNav__item">
+              <a href="">トップ</a>
+          </li>
+          <li class="sp-footerNav__item">
+              <a href="">お知らせ</a>
+          </li>
+          <li class="sp-footerNav__item">
+              <a href="">事業内容</a>
+          </li>
+          <li class="sp-footerNav__item">
+              <a href="">制作実績</a>
+          </li>
+          <li class="sp-footerNav__item">
+              <a href="">企業概要</a>
+          </li>
+          <li class="sp-footerNav__item">
+              <a href="">ブログ</a>
+          </li>
+          <li class="sp-footerNav__item">
               <a href="">お問い合わせ</a>
           </li>
         </ul>
       </div>
-  </div>
-</header>
+  </footer>
 </body>
 </html>

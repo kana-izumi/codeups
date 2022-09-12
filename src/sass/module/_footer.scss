@@ -1,0 +1,11 @@
+@use "global" as *;
+
+
+.footer {
+  background-color: $black;
+}
+
+.footer__inner {
+  padding: rem(48) 0;
+  
+}
