@@ -9,9 +9,11 @@
   right: 0;
   z-index: 299;
   transform: translateX(105%);
+  transition:ease .5s;
 
   &.open{
       transform: translateX(0);
+      transition:ease .5s;
   }
 }
 

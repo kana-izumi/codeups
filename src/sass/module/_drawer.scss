@@ -1,10 +1,11 @@
 @use "global" as *;
 
 .drawer{
-  width: rem(24);
   position: relative;
   z-index: 300;
+}
 
+.js-drawer-open {
   &.open {
       .drawer__icon-bar1{
           transform: rotate(-45deg);
@@ -24,6 +25,7 @@
   }
 }
 
+
 .drawer__icon {
   width: rem(24);
   height: rem(24);
@@ -41,6 +43,7 @@
   border-radius: 2px;
   top: 0;
   left: 0;
+  transition: ease .5s;
 }
 
 .drawer__icon-bar1 {

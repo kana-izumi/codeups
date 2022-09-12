@@ -7,5 +7,15 @@
 
 .footer__inner {
   padding: rem(48) 0;
-  
+  text-align: center;
+
+  @include mq("md") {
+    display: flex;
+  }
+}
+
+.footer__logo{
+  display: inline-block;
+  z-index:auto;
+  text-align: center;
 }

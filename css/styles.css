@@ -220,22 +220,21 @@ select::-ms-expand {
 }
 
 .drawer {
-  width: 24px;
-  width: 1.5rem;
   position: relative;
   z-index: 300;
 }
-.drawer.open .drawer__icon-bar1 {
+
+.js-drawer-open.open .drawer__icon-bar1 {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   top: 8px;
   top: 0.5rem;
   background: #fff;
 }
-.drawer.open .drawer__icon-bar2 {
+.js-drawer-open.open .drawer__icon-bar2 {
   display: none;
 }
-.drawer.open .drawer__icon-bar3 {
+.js-drawer-open.open .drawer__icon-bar3 {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   top: 8px;
@@ -265,6 +264,8 @@ select::-ms-expand {
   border-radius: 2px;
   top: 0;
   left: 0;
+  -webkit-transition: ease 0.5s;
+  transition: ease 0.5s;
 }
 
 .drawer__icon-bar1 {
@@ -288,6 +289,20 @@ select::-ms-expand {
 .footer__inner {
   padding: 48px 0;
   padding: 3rem 0;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .footer__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.footer__logo {
+  display: inline-block;
+  z-index: auto;
+  text-align: center;
 }
 
 .header {
@@ -337,8 +352,6 @@ select::-ms-expand {
 .logo {
   width: 75px;
   width: 4.6875rem;
-  position: relative;
-  z-index: 300;
   padding-top: 8px;
   padding-top: 0.5rem;
 }
@@ -346,6 +359,11 @@ select::-ms-expand {
   .logo {
     width: 5.875rem;
   }
+}
+
+.logo__link {
+  position: relative;
+  z-index: 300;
 }
 
 .pc-nav {
@@ -415,6 +433,17 @@ select::-ms-expand {
   color: #333;
 }
 
+.sp-footerNav__item {
+  margin-top: 8px;
+  margin-top: 0.5rem;
+  line-height: 1.5;
+  letter-spacing: 0.12em;
+}
+
+.sp-footerNav__item a {
+  display: block;
+}
+
 .sp-nav {
   background: #111;
   width: 100%;
@@ -425,10 +454,14 @@ select::-ms-expand {
   z-index: 299;
   -webkit-transform: translateX(105%);
           transform: translateX(105%);
+  -webkit-transition: ease 0.5s;
+  transition: ease 0.5s;
 }
 .sp-nav.open {
   -webkit-transform: translateX(0);
           transform: translateX(0);
+  -webkit-transition: ease 0.5s;
+  transition: ease 0.5s;
 }
 
 .sp-nav__items {
