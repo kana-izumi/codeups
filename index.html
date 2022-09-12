@@ -19,8 +19,13 @@
   <link rel="”icon”" href="" />
   <!-- css -->
   <link rel="stylesheet" href="./css/styles.css">
+  <!-- スワイパー -->
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script defer src="./js/script.js"></script>
 </head>
 <body>
@@ -30,13 +35,6 @@
   <!-- <a href="" class="btn">
     <span class="btn-text">詳しく見る</span>
   </a> -->
-
-  <!-- トップへ戻る -->
-  <div class="pagetop">
-    <a href="#">
-      <img src="./src/images/common/to-top.png" alt="トップへ戻る">
-    </a>
-  </div>
 </div>
 
 <!-- ヘッダー -->
@@ -109,11 +107,27 @@
   </div>
 </header>
 <!-- メインビジュアル -->
-  <div class="mv">
-    <div class="mv-img">
-      <img src="" alt="">
+    <div class="mv">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="slide-img">
+              <img src="./src/images/top/mv1.jpg" alt="img1">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slide-img">
+              <img src="./src/images/top/mv2.jpg" alt="img2">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slide-img">
+              <img src="./src/images/top/mv3.png" alt="img3">
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
 <!-- フッダー -->
   <footer class="footer">
     <div class="footer__inner">
@@ -122,7 +136,7 @@
           <img src="./src/images/common/logo.svg" alt="フッダーロゴ">
         </a>
       </div>
-      <div class="sp-footerNav">
+      <div class="sp-footerNav u-mobile">
         <ul class="sp-footerNav__items">
           <li class="sp-footerNav__item">
             <a href="">トップ</a>
@@ -147,7 +161,38 @@
           </li>
         </ul>
       </div>
+      <div class="pc-footerNav u-desktop">
+        <ul class="pc-footerNav__items">
+          <li class="pc-footerNav__item">
+            <a href="">お知らせ</a>
+          </li>
+          <li class="pc-footerNav__item">
+            <a href="">事業内容</a>
+          </li>
+          <li class="pc-footerNav__item">
+            <a href="">制作実績</a>
+          </li>
+          <li class="pc-footerNav__item">
+            <a href="">企業概要</a>
+          </li>
+          <li class="pc-footerNav__item">
+            <a href="">自社メディア</a>
+          </li>
+          <li class="pc-footerNav__item">
+            <a href="">お問い合わせ</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      <small> &copy; 2021 CodeUps Inc.</small>
     </div>
     </footer>
+    <!-- トップへ戻る -->
+  <div class="to-top">
+    <a href="#">
+      <img src="./src/images/common/to-top.png" alt="トップへ戻る">
+    </a>
+  </div>
 </body>
 </html>

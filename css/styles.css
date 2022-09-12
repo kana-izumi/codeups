@@ -219,6 +219,28 @@ select::-ms-expand {
   width: 100%;
 }
 
+.copyright {
+  line-height: 35px;
+  line-height: 2.1875rem;
+  letter-spacing: 0.12em;
+}
+@media screen and (min-width: 768px) {
+  .copyright {
+    text-align: center;
+    padding: 2rem 1.625rem;
+  }
+}
+
+.copyright small {
+  font-size: 11px;
+  font-size: 0.6875rem;
+}
+@media screen and (min-width: 768px) {
+  .copyright small {
+    font-size: 0.9375rem;
+  }
+}
+
 .drawer {
   position: relative;
   z-index: 300;
@@ -296,6 +318,13 @@ select::-ms-expand {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 2rem 2rem;
   }
 }
 
@@ -309,6 +338,11 @@ select::-ms-expand {
   height: 50px;
   height: 3.125rem;
   background-color: #111;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
 }
 
 .header__inner {
@@ -364,6 +398,50 @@ select::-ms-expand {
 .logo__link {
   position: relative;
   z-index: 300;
+}
+
+.pc-footerNav__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pc-footerNav__item {
+  line-height: 1.5;
+  letter-spacing: 0.12em;
+}
+.pc-footerNav__item:not(:first-child) {
+  margin-left: 32px;
+  margin-left: 2rem;
+}
+
+.pc-footerNav__item a {
+  display: block;
+  position: relative;
+}
+.pc-footerNav__item a::after {
+  position: absolute;
+  content: "";
+  width: 70px;
+  width: 4.375rem;
+  height: 1px;
+  height: 0.0625rem;
+  bottom: -8px;
+  bottom: -0.5rem;
+  left: 0;
+  background-color: #FFEA2E;
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1); /*アンダーラインの縮尺比率。ホバー前はx方向に0*/
+  -webkit-transform-origin: left top;
+          transform-origin: left top; /*変形（アンダーラインの伸長）の原点がaタグ（各メニュー）の左端*/
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s; /*変形の時間*/
+}
+.pc-footerNav__item a:hover::after {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1); /*ホバー後、x軸方向に1（相対値）伸長*/
 }
 
 .pc-nav {
@@ -494,9 +572,50 @@ select::-ms-expand {
   color: #fff;
 }
 
-.pagetop {
+.to-top {
   max-width: 45px;
   max-width: 2.8125rem;
   width: 100%;
+  position: fixed;
+  bottom: 41px;
+  bottom: 2.5625rem;
+  right: 21px;
+  right: 1.3125rem;
+}
+
+.mv {
+  overflow: hidden;
+}
+
+@-webkit-keyframes zoomUp {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+  }
+}
+
+@keyframes zoomUp {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+  }
+}
+.swiper-slide-active .slide-img,
+.swiper-slide-duplicate-active .slide-img,
+.swiper-slide-prev .slide-img {
+  -webkit-animation: zoomUp 10s linear 0s 1 normal both;
+          animation: zoomUp 10s linear 0s 1 normal both;
+}
+
+.slide-img img {
+  display: block;
 }
 /*# sourceMappingURL=styles.css.map */

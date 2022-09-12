@@ -1,6 +1,9 @@
 @use "global" as *;
 
-.pagetop{
+.to-top{
   max-width: rem(45);
   width: 100%;
+  position: fixed;
+  bottom: rem(41);
+  right: rem(21);
 }

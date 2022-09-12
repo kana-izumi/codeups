@@ -1,0 +1,39 @@
+@use "global" as *;
+
+
+.pc-footerNav__items {
+  display: flex;
+}
+
+.pc-footerNav__item {
+    line-height: 1.5;
+    letter-spacing: 0.12em;
+
+
+    &:not(:first-child) {
+      margin-left: rem(32);
+    }
+}
+
+.pc-footerNav__item a {
+  display: block;
+  position: relative;
+
+  &::after{
+    position: absolute;
+    content: "";
+    width: rem(70);
+    height: rem(1);
+    bottom: rem(-8);
+    left: 0;
+    background-color: #FFEA2E;
+
+      transform: scale(0, 1);     /*アンダーラインの縮尺比率。ホバー前はx方向に0*/
+      transform-origin: left top; /*変形（アンダーラインの伸長）の原点がaタグ（各メニュー）の左端*/
+      transition: transform 0.3s; /*変形の時間*/
+    }
+
+  &:hover::after {
+  transform: scale(1, 1);     /*ホバー後、x軸方向に1（相対値）伸長*/
+  }
+}

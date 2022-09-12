@@ -1,0 +1,19 @@
+@use "global" as *;
+
+.copyright {
+  line-height: rem(35);
+  letter-spacing: 0.12em;
+
+  @include mq("md") {
+    text-align: center;
+    padding: rem(32) rem(26);
+  }
+}
+
+.copyright small {
+  font-size: rem(11);
+
+  @include mq("md") {
+    font-size: rem(15);
+  }
+}
