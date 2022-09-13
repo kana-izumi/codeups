@@ -1,0 +1,66 @@
+@use "global" as *;
+
+.news__item {
+    @include mq(md) {
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+.news__date ,
+.news__category {
+    display: inline-block;
+}
+
+
+.news__date {
+    font-size: rem(14);
+}
+
+.news__category {
+    margin-left: rem(26);
+    padding: rem(6) rem(21);
+    border: rem(1) solid $white;
+    font-size: rem(14);
+    line-height: 1.25;
+}
+
+.news__text {
+    margin-top: rem(17);
+
+    @include mq(md) {
+        margin-top: initial;
+        margin-left: rem(50);
+    }
+}
+
+.news__title {
+    line-height: 1.45;
+}
+
+.news__btn{
+    margin-top: rem(26);
+
+    @include mq(md) {
+        margin-top: initial;
+        margin-left: rem(40);
+    }
+}
+
+.news__btn-link {
+    display: inline-block;
+    padding: rem(10) rem(114);
+    border: $white;
+    background-color: #333333;
+    border: rem(1) solid $white;
+    font-size: rem(20);
+    letter-spacing: 0.02em;
+    position: relative;
+
+  @include mq(md) {
+    padding: rem(3) rem(24);
+    background-color: $white;
+    color: $black;
+    }
+}

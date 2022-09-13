@@ -1,0 +1,14 @@
+@use "global" as *;
+
+.news-inner {
+    padding-left: rem(20);
+    padding-right: rem(20);
+    width: 100%;
+
+    @include mq(md) {
+        box-sizing: content-box;
+        max-width: rem(1024);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
