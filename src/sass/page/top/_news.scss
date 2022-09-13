@@ -39,6 +39,10 @@
     line-height: 1.45;
 }
 
+.news__title:hover {
+    text-decoration: underline;
+}
+
 .news__btn{
     margin-top: rem(26);
 
@@ -62,5 +66,15 @@
     padding: rem(3) rem(24);
     background-color: $white;
     color: $black;
+    }
+}
+
+.news__btn-link:hover {
+    background-color: $white;
+    color: $black;
+
+    @include mq(md) {
+        background-color: #333;
+        color: $white;
     }
 }
