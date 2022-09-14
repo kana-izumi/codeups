@@ -672,6 +672,18 @@ select::-ms-expand {
   }
 }
 
+.works__img {
+  position: relative;
+}
+
+.swiper-pagination .works__pagination {
+  position: absolute;
+  left: 50%;
+  bottom: auto;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
 .mv {
   overflow: hidden;
 }

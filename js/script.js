@@ -1,3 +1,4 @@
+
 jQuery(function ($) { // この中であればWordpressでも「$」が使用可能になる
 
   var topBtn = $('.to-top');
@@ -32,8 +33,6 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
   });
 
-
-
   // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)
 
   $(document).on('click', 'a[href*="#"]', function () {
@@ -59,25 +58,9 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   new Swiper('.swiper-container', swipeOption);
 
 
-  const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    direction: 'vertical',
-    loop: true,
-
-    // If we need pagination
+  var swiper = new Swiper(".mySwiper", {
     pagination: {
-      el: '.swiper-pagination',
-    },
-
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
+      el: ".swiper-pagination",
     },
   });
 
