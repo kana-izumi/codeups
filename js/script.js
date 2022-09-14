@@ -1,7 +1,6 @@
-
 jQuery(function ($) { // この中であればWordpressでも「$」が使用可能になる
 
-  var topBtn = $('.pagetop');
+  var topBtn = $('.to-top');
   topBtn.hide();
 
   // ボタンの表示設定
@@ -47,20 +46,39 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     return false;
   });
 
-});
 
-// mvスワイパー
-let swipeOption = {
-  loop: true,
-  effect: 'fade',
-  autoplay: {
-    delay: 4000,
-    disableOnInteraction: false,
-  },
-  speed: 2000,
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
+  // mvスワイパー
+  let swipeOption = {
+    loop: true,
+    effect: 'fade',
+    autoplay: {
+      delay: 4000,
+    },
+    speed: 2000,
   }
-}
-new Swiper('.swiper-container', swipeOption);
+  new Swiper('.swiper-container', swipeOption);
+
+
+  const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'vertical',
+    loop: true,
+
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  });
+
+});

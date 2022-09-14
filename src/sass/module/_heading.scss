@@ -15,6 +15,7 @@
   position: relative;
   z-index: 2;
   font-weight: $normal;
+  letter-spacing: 0.03em;
 }
 
 .heading::before {
@@ -32,5 +33,7 @@
 
   @include mq(md) {
     font-size: rem(110);
+    top: 6%;
+    left: 24%;
   }
 }

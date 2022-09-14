@@ -112,7 +112,7 @@
 </header>
 <!-- メインビジュアル -->
     <div class="mv">
-      <div class="swiper-container">
+      <div class="swiper-container js-mv-swiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="slide-img-sp u-mobile">
@@ -168,25 +168,71 @@
     <div class="product-inner">
       <div class="product__items">
         <div class="product__item">
-          <img src="./src/images/top/product1.jpg" alt="経営理念ページへ">
-          <p class="product__text">経営理念ページへ</p>
+          <a href="">
+            <img src="./src/images/top/product1.jpg" alt="経営理念ページへ">
+            <p class="product__text">経営理念ページへ</p>
+          </a>
         </div>
         <div class="product__item">
-          <img src="./src/images/top/product2.jpg" alt="理念1へ">
-          <p class="product__text">理念1へ</p>
+          <a href="">
+            <img src="./src/images/top/product2.jpg" alt="理念1へ">
+            <p class="product__text">理念1へ</p>
+          </a>
         </div>
         <div class="product__item">
-          <img src="./src/images/top/product3.jpg" alt="理念2へ">
-          <p class="product__text">理念2へ</p>
+          <a href="">
+            <img src="./src/images/top/product3.jpg" alt="理念2へ">
+            <p class="product__text">理念2へ</p>
+          </a>
         </div>
         <div class="product__item">
-          <img src="./src/images/top/product4.jpg" alt="理念3へ">
-          <p class="product__text">理念3へ</p>
+          <a href="">
+            <img src="./src/images/top/product4.jpg" alt="理念3へ">
+            <p class="product__text">理念3へ</p>
+          </a>
         </div>
       </div>
     </div>
-
   </section>
+
+<!-- 制作実績 -->
+  <section class="works works-wrap">
+    <h2 class="heading" date-en="Works"><span>制作実績</span></h2>
+    <div class="works__items">
+      <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="works__item">
+                <img src="./src/images/top/works1.jpg" alt="制作実績">
+                <p class="works__title">メインタイトルが入ります。</p>
+                <p class="works__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                <div class="works__btn">
+                    <a href="" class="btn">
+                    <span class="btn-text">詳しく見る</span>
+                    </a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            ...
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+        </div>
+    </div>
+  </section>
+
 <!-- フッダー -->
   <footer class="footer">
     <div class="footer__inner">

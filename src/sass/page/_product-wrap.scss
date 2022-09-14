@@ -1,5 +1,9 @@
 @use "global" as *;
 
 .product-wrap {
-    margin-top: rem(110);
+    margin-top: rem(100);
+
+    @include mq(md) {
+        margin-top: rem(141);
+    }
 }

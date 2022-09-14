@@ -24,6 +24,10 @@
     border: rem(1) solid $white;
     font-size: rem(14);
     line-height: 1.25;
+
+    @include mq(md) {
+        margin-left: rem(41);
+    }
 }
 
 .news__text {
@@ -31,7 +35,7 @@
 
     @include mq(md) {
         margin-top: initial;
-        margin-left: rem(50);
+        margin-left: rem(61);
     }
 }
 
@@ -48,13 +52,13 @@
 
     @include mq(md) {
         margin-top: initial;
-        margin-left: rem(40);
+        margin-left: rem(50);
     }
 }
 
 .news__btn-link {
     display: inline-block;
-    padding: rem(10) rem(114);
+    padding: rem(9) rem(116);
     border: $white;
     background-color: #333333;
     border: rem(1) solid $white;
@@ -63,9 +67,15 @@
     position: relative;
 
   @include mq(md) {
-    padding: rem(3) rem(24);
+    padding: 0 rem(26);
     background-color: $white;
     color: $black;
+    }
+}
+
+.news__btn-text {
+    @include mq(md) {
+        font-size: rem(16);
     }
 }
 

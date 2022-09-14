@@ -14,6 +14,10 @@
   height: inherit;
   padding: 0 rem(16);
   position: relative;
+
+  @include mq(md) {
+    padding: 0 rem(18);
+}
 }
 
 .pc-nav__item a{
@@ -21,6 +25,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @include mq(md) {
+    letter-spacing: 0.02em;
+}
 
   &::after{
     position: absolute;
@@ -42,8 +50,10 @@
 }
 
 .pc-nav__item--white {
-  padding-right: rem(32);
+  padding-right: rem(35);
+  padding-left: rem(35);
   background-color: $white;
+  margin-left: rem(16);
 }
 
 .pc-nav__item--white a{
