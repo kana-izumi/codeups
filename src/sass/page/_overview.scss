@@ -1,5 +1,18 @@
 @use "global" as *;
 
-.overview__items {
+.overview__inner {
     margin-top: rem(54);
+
+    @include mq(md) {
+        max-width: rem(1100);
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+.overview__item {
+    @include mq(md) {
+        display: flex;
+        flex-flow: row-reverse;
+    }
 }

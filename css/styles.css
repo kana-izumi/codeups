@@ -172,6 +172,15 @@ select::-ms-expand {
   display: none;
 }
 
+@media screen and (min-width: 768px) {
+  .bg {
+    background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(25%, transparent), color-stop(26%, #333), to(#333));
+    background: linear-gradient(90deg, transparent 0%, transparent 25%, #333 26%, #333 100%);
+    padding: 5rem 0;
+    margin-top: 3rem;
+  }
+}
+
 .btn {
   display: inline-block;
   padding: 10px 114px;
@@ -409,7 +418,7 @@ select::-ms-expand {
   .heading-right::after {
     font-size: 6.875rem;
     top: 6%;
-    right: 0;
+    left: 80%;
   }
 }
 
@@ -472,41 +481,10 @@ select::-ms-expand {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-
-.item__img {
-  position: relative;
-}
-
-.item__img::before {
-  content: "";
-  display: block;
-  padding-top: 69.838%;
-}
-
-.item__img img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .item__textBlock {
   padding: 24px 20px;
   padding: 1.5rem 1.25rem;
 }
-
 .item__title {
   text-align: center;
   letter-spacing: 0.02em;
@@ -749,9 +727,28 @@ select::-ms-expand {
   }
 }
 
-.overview__items {
+.overview__inner {
   margin-top: 54px;
   margin-top: 3.375rem;
+}
+@media screen and (min-width: 768px) {
+  .overview__inner {
+    max-width: 68.75rem;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .overview__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: row-reverse;
+            flex-flow: row-reverse;
+  }
 }
 
 .product-inner {
@@ -784,9 +781,35 @@ select::-ms-expand {
   }
 }
 
-.works__items {
+.works__inner {
   margin-top: 54px;
   margin-top: 3.375rem;
+}
+@media screen and (min-width: 768px) {
+  .works__inner {
+    max-width: 74.375rem;
+    margin: 0 auto;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .works__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .works__img {
+    width: 100%;
+    max-width: 34.8125rem;
+  }
 }
 
 .mv {
