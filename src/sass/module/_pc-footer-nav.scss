@@ -1,11 +1,11 @@
 @use "global" as *;
 
 
-.pc-footerNav__items {
+.pc-footer-nav__items {
   display: flex;
 }
 
-.pc-footerNav__item {
+.pc-footer-nav__item {
     line-height: 1.5;
     letter-spacing: 0.12em;
 
@@ -15,7 +15,7 @@
     }
 }
 
-.pc-footerNav__item a {
+.pc-footer-nav__item a {
   display: block;
   position: relative;
 

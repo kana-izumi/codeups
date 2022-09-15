@@ -26,24 +26,48 @@
 
 // }
 
-.item__textBlock {
-    padding: rem(24) rem(20);
-    @include mq(md){
-        
+.item__content {
+    @include mq(md) {
+        max-width: rem(510);
+        width: 100%;
     }
 }
+
+
+.item__text-block {
+    padding: rem(24) rem(20);
+
+    @include mq(md) {
+        padding: 0;
+    }
+}
+
 
 .item__title {
     text-align: center;
     letter-spacing: 0.02em;
     font-size: rem(20);
+
+    @include mq(md) {
+        text-align: left;
+        font-size: rem(25);
+    }
 }
 
 .item__message {
     margin-top: rem(24);
+
+    @include mq(md) {
+        line-height: 2.3;
+    }
 }
 
 .item__btn {
     margin-top: rem(16);
     text-align: center;
+
+    @include mq(md) {
+        text-align: left;
+        margin-top: rem(48);
+    }
 }

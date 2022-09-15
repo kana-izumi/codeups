@@ -58,7 +58,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   new Swiper('.swiper-container', swipeOption);
 
 
-  var swiper = new Swiper(".works-swiper", {
+  var swiper = new Swiper(".mySwiper", {
     pagination: {
       el: ".swiper-pagination",
     },
