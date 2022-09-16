@@ -1,0 +1,23 @@
+@use "global" as *;
+
+.new-icon {
+  position: relative;
+}
+
+.new-icon::before {
+  content: "New";
+  background-color: #FFBA6A;
+  width: rem(60);
+  height: rem(60);
+  line-height: 2.1;
+  letter-spacing: 0.057em;
+  border-radius: 50%;
+  color: #333;
+  padding: rem(12);
+
+  position: absolute;
+  top: rem(-15);
+  left: rem(-16);
+  z-index: 300;
+}
+
