@@ -45,7 +45,6 @@
 
 .item__title {
     text-align: center;
-    letter-spacing: 0.02em;
     font-size: rem(20);
 
     @include mq(md) {
@@ -56,18 +55,21 @@
 
 .item__message {
     margin-top: rem(24);
+    letter-spacing: 0.13em;
+    line-height: 1.45;
 
     @include mq(md) {
+        letter-spacing: 0.035em;
         line-height: 2.3;
+        margin-top: rem(31);
     }
 }
 
 .item__btn {
-    margin-top: rem(16);
     text-align: center;
 
     @include mq(md) {
         text-align: left;
-        margin-top: rem(48);
+        margin-top: rem(41);
     }
 }

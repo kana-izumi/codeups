@@ -1,0 +1,39 @@
+@use "global" as *;
+
+.overview-heading {
+  position: relative;
+  padding-top: rem(49);
+  font-size: rem(20);
+  text-align: center;
+
+  @include mq(md) {
+    font-size: rem(30);
+  }
+}
+
+.overview-heading span {
+  position: relative;
+  z-index: 2;
+  font-weight: $normal;
+  letter-spacing: 0.03em;
+}
+
+.overview-heading::before {
+  content:attr(date-en);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(249, 248, 113, 0.2);
+  font-family: $second-font-family;
+  font-size: rem(50);
+  z-index: 1;
+  font-weight: normal;
+  letter-spacing: 0.02em;
+
+  @include mq(md) {
+    font-size: rem(110);
+    top: 0;
+    left: 27%;
+  }
+}
