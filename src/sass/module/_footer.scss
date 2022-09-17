@@ -6,14 +6,18 @@
 }
 
 .footer__inner {
-  padding: rem(40) 0 rem(19);
+  margin-top: rem(40);
+  padding-left: rem(19);
+  padding-right: rem(19);
   text-align: center;
 
   @include mq("md") {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: rem(32) rem(32);
+    padding-left: rem(32);
+    padding-right: rem(32);
+    margin-top: rem(24);
   }
 }
 
@@ -21,4 +25,8 @@
   display: inline-block;
   z-index:auto;
   text-align: center;
+
+  @include mq("md") {
+    width: rem(70);
+  }
 }

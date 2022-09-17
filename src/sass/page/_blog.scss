@@ -1,5 +1,11 @@
 @use "global" as *;
 
+.blog__heading::after {
+    @include mq("md"){
+        left: 84%;
+    }
+}
+
 .blog__items {
     margin-top: rem(63);
 

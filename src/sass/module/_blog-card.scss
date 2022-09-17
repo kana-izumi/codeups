@@ -43,6 +43,10 @@
   line-height: 1.85;
   margin-top: rem(4);
   letter-spacing: 0.055em;
+
+  @include mq("md") {
+    margin-top: rem(5);
+  }
 }
 
 .blog-card__meta {
@@ -50,6 +54,10 @@
   justify-content: space-between;
   align-items: center;
   margin-top: rem(8);
+
+  @include mq("md") {
+    margin-top: rem(11);
+  }
 }
 
 .blog-card__category ,
