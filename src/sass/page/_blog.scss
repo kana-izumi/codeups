@@ -2,6 +2,10 @@
 
 .blog__items {
     margin-top: rem(63);
+
+    @include mq("md") {
+        margin-top: rem(38);
+    }
 }
 
 .blog__btn {

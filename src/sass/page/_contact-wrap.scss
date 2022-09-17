@@ -2,4 +2,9 @@
 
 .contact-wrap {
     margin-top: rem(120);
+    background-color: #3D3D3D;
+
+    @include mq("md") {
+        margin-top: rem(148);
+    }
 }
