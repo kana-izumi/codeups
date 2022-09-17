@@ -6,4 +6,9 @@
   position: fixed;
   bottom: rem(41);
   right: rem(21);
+
+  @include mq(md) {
+    bottom: rem(32);
+    right: rem(31);
+  }
 }
