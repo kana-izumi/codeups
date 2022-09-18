@@ -45,6 +45,17 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     return false;
   });
 
+  // ヘッダーはMVでは透過、MV以下追従。透過しない。
+  $(function () {
+    $(window).on("scroll", function () {
+      const sliderHeight = $(".mv").height();
+      if (sliderHeight - 30 < $(this).scrollTop()) {
+        $(".js-header").addClass("change-color");
+      } else {
+        $(".js-header").removeClass("change-color");
+      }
+    });
+  });
 
   // mvスワイパー
   let swipeOption = {
@@ -57,10 +68,16 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   }
   new Swiper('.swiper-container', swipeOption);
 
+// worksスワイパー
+  var swiper = new Swiper(".js-works-swiper", {
+    loop: true,
+    clickable: true,
 
-  var swiper = new Swiper(".mySwiper", {
+    autoplay: {
+      delay: 3000,
+    },
     pagination: {
-      el: ".swiper-pagination",
+      el: ".js-works-pagination",
     },
   });
 

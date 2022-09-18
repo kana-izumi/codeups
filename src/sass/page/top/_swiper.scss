@@ -1,0 +1,32 @@
+@use "global" as *;
+
+// mv
+
+@keyframes zoomUp {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.15);
+    }
+  }
+
+  .swiper-slide-active .slide-img,
+  .swiper-slide-duplicate-active .slide-img,
+  .swiper-slide-prev .slide-img{
+    animation: zoomUp 10s linear 0s 1 normal both;
+  }
+
+// work
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: rem(-24);
+}
+
+.swiper-pagination-bullet {
+    background: #C4C4C4;
+}
+.swiper-pagination-bullet-active {
+    background: #F9F871;
+}

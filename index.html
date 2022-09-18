@@ -17,12 +17,12 @@
   <meta property="og:description" content="" />
   <!-- ファビコン -->
   <link rel="”icon”" href="" />
-  <!-- css -->
-  <link rel="stylesheet" href="./css/styles.css">
   <!-- スワイパー -->
   <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <!-- css -->
+  <link rel="stylesheet" href="./css/styles.css">
   <!-- googlefont -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,13 +36,13 @@
   <div class="inner">
 
     <!-- ボタン -->
-  <!-- <a href="" class="btn">
-    <span class="btn-text">詳しく見る</span>
-  </a> -->
+  <a href="" class="btn bgleft">
+    <span>詳しく見る</span>
+  </a>
 </div>
 
 <!-- ヘッダー -->
-<header class="header">
+<header class="header js-header">
   <div class="header__inner">
     <h1 class="logo">
       <a href="#" class="logo__link">
@@ -169,8 +169,7 @@
   <!-- 事業内容 -->
   <section class="content content-wrap">
     <div class="heading">
-      <span class="heading__sub-title">Content</span>
-      <h2 class="heading__main-title">事業内容</h2>
+      <h2 class="heading__title heading__title-content" date-en="Content"><span>事業内容</span></h2>
     </div>
     <div class="content__inner">
       <div class="content__items">
@@ -204,46 +203,51 @@
 
 <!-- 制作実績 -->
 <section class="works works-wrap">
-  <h2 class="heading-right" date-en="Works"><span>制作実績</span></h2>
+  <div class="heading">
+    <h2 class="heading-right" date-en="Works"><span>制作実績</span></h2>
+  </div>
     <div class="work__bg">
       <div class="works__inner">
         <div class="works__items">
-        <!-- Swiper -->
-        <div class="swiper mySwiper  works__swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="works__item">
-                <div class="works__img">
-                  <img src="./src/images/top/works1.jpg" alt="制作実績">
-                </div>
-              </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="works__item">
-                  <div class="works__img">
-                    <img src="./src/images/top/works2.jpg" alt="制作実績">
+          <div class="works__images">
+            <!-- Swiper -->
+            <div class="swiper works__swiper js-works-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="works__item">
+                    <div class="works__img">
+                      <img src="./src/images/top/works1.jpg" alt="制作実績">
+                    </div>
+                  </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="works__item">
+                      <div class="works__img">
+                        <img src="./src/images/top/works2.jpg" alt="制作実績">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="works__item">
+                      <div class="works__img">
+                        <img src="./src/images/top/works3.jpg" alt="制作実績">
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="swiper-slide">
-                <div class="works__item">
-                  <div class="works__img">
-                    <img src="./src/images/top/works3.jpg" alt="制作実績">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-pagination"></div>
+              <div class="swiper-pagination js-works-pagination"></div>
           </div>
+
           <div class="works__content item__content">
             <div class="works__text-block item__text-block">
               <p class="works__title item__title">メインタイトルが入ります。</p>
               <p class="works__message item__message">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
             </div>
             <div class="works__btn item__btn">
-                <a href="" class="btn">
-                <span class="btn-text">詳しく見る</span>
-                </a>
+              <a href="" class="btn bgleft">
+                <span>詳しく見る</span>
+              </a>
             </div>
           </div>
         </div>
@@ -253,7 +257,7 @@
 <!-- 企業概要 -->
   <section class="overview overview-wrap">
     <div class="heading">
-      <h2 class="heading__title" date-en="Overview"><span>企業概要</span></h2>
+      <h2 class="heading__title heading__title-overview" date-en="Overview"><span>企業概要</span></h2>
     </div>
     <div class="overview__bg">
     <div class="overview__inner">
@@ -268,8 +272,8 @@
               <p class="overview__message item__message">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
             </div>
             <div class="overview__btn item__btn">
-              <a href="" class="btn">
-                <span class="btn-text">詳しく見る</span>
+              <a href="" class="btn bgleft">
+                <span>詳しく見る</span>
               </a>
             </div>
           </div>
@@ -280,7 +284,9 @@
 <!-- ブログ -->
   <section class="blog blog-wrap">
     <div class="blog__inner inner">
-    <h2 class="heading-right blog__heading" date-en="Blog"><span>ブログ</span></h2>
+      <div class="heading">
+        <h2 class="heading-right blog__heading" date-en="Blog"><span>ブログ</span></h2>
+      </div>
       <div class="blog__items card-list">
           <a class="blog-card card-list__item new-icon">
             <figure class="blog-card__img">
@@ -323,8 +329,8 @@
         </a>
       </div>
       <div class="blog__btn">
-        <a href="" class="btn">
-          <span class="btn-text">詳しく見る</span>
+        <a href="" class="btn bgleft">
+          <span>詳しく見る</span>
         </a>
       </div>
     </div>
@@ -332,11 +338,13 @@
   <!-- お問い合わせ -->
   <section class="contact contact-wrap">
     <div class="contact__inner">
-    <h2 class="heading contact__heading" date-en="Contact"><span>お問い合わせ</span></h2>
+      <div class="heading">
+        <h2 class="heading__title heading__title-contact" date-en="Contact"><span>お問い合わせ</span></h2>
+      </div>
       <div class="contact__body">
         <p class="contact__message">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
         <div class="contact__btn">
-          <a href="" class="btn">
+          <a href="" class="btn bgleft">
             <span class="btn-text">お問い合わせへ</span>
           </a>
         </div>
@@ -344,12 +352,12 @@
       </div>
   </section>
 
-<!-- フッダー -->
+<!-- フッター -->
   <footer class="footer">
     <div class="footer__inner">
       <div class="footer__logo logo">
         <a href="#">
-          <img src="./src/images/common/logo.svg" alt="フッダーロゴ">
+          <img src="./src/images/common/logo.svg" alt="フッターロゴ">
         </a>
       </div>
       <div class="sp-footer-nav u-mobile">
