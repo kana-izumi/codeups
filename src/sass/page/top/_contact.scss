@@ -1,10 +1,11 @@
 @use "global" as *;
 
 .contact__inner {
-    padding: rem(17) rem(19) rem(64);
+    padding: rem(14) rem(19) rem(58);
 
     @include mq("md") {
-        padding: rem(57) rem(19) rem(149) ;
+        padding-top: rem(57);
+        padding-bottom: rem(144);
         text-align: center;
     }
 }
@@ -21,7 +22,7 @@
     @include mq(md) {
       font-size: rem(110);
       top: 0;
-      left: 23%;
+      left: 19%;
     }
   }
 
@@ -41,4 +42,20 @@
     @include mq(md) {
         margin-top: rem(58);
       }
+}
+
+.contact__btn-link {
+  padding: rem(10) rem(94);
+
+  @include mq(md) {
+    padding: rem(18) rem(94);
+  }
+}
+
+.contact__btn-text {
+  letter-spacing: 0.08em;
+  @include mq(md) {
+    font-size: rem(20);
+    letter-spacing: 0.25em;
+  }
 }

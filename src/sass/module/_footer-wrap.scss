@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.footer-wrap{
+  margin-top: rem(50);
+
+  @include mq("md") {
+    margin-top: rem(36);
+  }
+}

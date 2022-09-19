@@ -21,12 +21,12 @@
   <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-  <!-- css -->
-  <link rel="stylesheet" href="./css/styles.css">
   <!-- googlefont -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;700&display=swap" rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="./css/styles.css">
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
@@ -156,10 +156,15 @@
             <div class="news__text">
               <a href="" class="news__title">記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。</a>
             </div>
-            <div class="news__btn">
-              <a href="" class="news__btn-link">
+            <div class="news__btn u-mobile">
+              <a href="" class="btn bgleft">
+                <span>すべて見る</span>
+              </a>
+            </div>
+            <div class="news__btn u-desktop">
+              <a href="" class="news__btn-link bgleft2">
                   <span class="news__btn-text">すべて見る</span>
-                </a>
+              </a>
             </div>
           </div>
         </div>
@@ -203,9 +208,9 @@
 <!-- 制作実績 -->
 <section class="works works-wrap">
   <div class="heading">
-    <h2 class="heading-right" date-en="Works"><span>制作実績</span></h2>
+    <h2 class="works__heading heading-right" date-en="Works"><span>制作実績</span></h2>
   </div>
-    <div class="work__bg">
+    <div class="works__bg">
       <div class="works__inner">
         <div class="works__items">
           <div class="works__images">
@@ -256,7 +261,7 @@
 <!-- 企業概要 -->
   <section class="overview overview-wrap">
     <div class="heading">
-      <h2 class="heading__title heading__title-overview" date-en="Overview"><span>企業概要</span></h2>
+      <h2 class="overview__heading heading__title" date-en="Overview"><span>企業概要</span></h2>
     </div>
     <div class="overview__bg">
     <div class="overview__inner">
@@ -284,7 +289,7 @@
   <section class="blog blog-wrap">
     <div class="blog__inner inner">
       <div class="heading">
-        <h2 class="heading-right blog__heading" date-en="Blog"><span>ブログ</span></h2>
+        <h2 class="blog__heading heading-right" date-en="Blog"><span>ブログ</span></h2>
       </div>
       <div class="blog__items card-list">
           <a class="blog-card card-list__item new-icon">
@@ -338,13 +343,13 @@
   <section class="contact contact-wrap">
     <div class="contact__inner">
       <div class="heading">
-        <h2 class="heading__title heading__title-contact" date-en="Contact"><span>お問い合わせ</span></h2>
+        <h2 class="contact__heading heading__title" date-en="Contact"><span>お問い合わせ</span></h2>
       </div>
       <div class="contact__body">
         <p class="contact__message">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
         <div class="contact__btn">
-          <a href="" class="btn bgleft">
-            <span class="btn-text">お問い合わせへ</span>
+          <a href="" class="contact__btn-link btn bgleft">
+            <span class="contact__btn-text btn-text">お問い合わせへ</span>
           </a>
         </div>
       </div>
@@ -352,9 +357,9 @@
   </section>
 
 <!-- フッター -->
-  <footer class="footer">
+  <footer class="footer footer-wrap">
     <div class="footer__inner">
-      <div class="footer__logo logo">
+      <div class="footer__logo">
         <a href="#">
           <img src="./src/images/common/logo.svg" alt="フッターロゴ">
         </a>

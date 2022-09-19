@@ -21,21 +21,19 @@
 //     object-fit: cover;
 // }
 
-// .item__content {
-
-
-// }
 
 .item__content {
+    padding: rem(24) rem(20) rem(15);
+
     @include mq(md) {
         max-width: rem(510);
         width: 100%;
+        padding: 0;
     }
 }
 
 
 .item__text-block {
-    padding: rem(24) rem(20);
 
     @include mq(md) {
         padding: 0;
@@ -67,6 +65,7 @@
 
 .item__btn {
     text-align: center;
+    margin-top: rem(24);
 
     @include mq(md) {
         text-align: left;

@@ -49,6 +49,7 @@
 
 .news__btn{
     margin-top: rem(26);
+    text-align: center;
 
     @include mq(md) {
         margin-top: initial;
@@ -58,10 +59,10 @@
 
 .news__btn-link {
     display: inline-block;
+    overflow: hidden;
     padding: rem(9) rem(116);
     border: $white;
     background-color: #333333;
-    border: rem(1) solid $white;
     font-size: rem(20);
     letter-spacing: 0.02em;
     position: relative;
@@ -69,22 +70,40 @@
   @include mq(md) {
     padding: 0 rem(26);
     background-color: $white;
-    color: $black;
-    }
+}
 }
 
 .news__btn-text {
     @include mq(md) {
+        position: relative;
+        z-index: 3;
         font-size: rem(16);
+        color: $black;
     }
 }
 
-.news__btn-link:hover {
-    background-color: $white;
-    color: $black;
-
+.news__btn-text:hover {
     @include mq(md) {
-        background-color: #333;
         color: $white;
     }
 }
+
+
+.news__btn-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: #333;
+    width: 100%;
+    height: 100%;
+    transition: transform .6s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+    transform: scale(0, 1);
+   transform-origin: right top;
+   }
+
+   .news__btn-link:hover:before{
+   transform-origin:left top;
+   transform:scale(1, 1);
+   }

@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .content-wrap {
-    margin-top: rem(100);
+    margin-top: rem(95);
 
     @include mq(md) {
         margin-top: rem(141);

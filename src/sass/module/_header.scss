@@ -22,7 +22,7 @@
   justify-content: space-between;
   height: inherit;
   padding-left: rem(22);
-  padding-right: rem(22);
+  padding-right: rem(18);
 
   @include mq("md") {
     padding-left: rem(32);

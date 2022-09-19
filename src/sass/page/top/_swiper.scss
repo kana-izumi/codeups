@@ -21,7 +21,12 @@
 .swiper-horizontal>.swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom, .swiper-pagination-fraction {
-    bottom: rem(-24);
+    bottom: rem(-21);
+
+    @include mq("md") {
+      bottom: rem(-33);
+      left: rem(-23);
+    }
 }
 
 .swiper-pagination-bullet {

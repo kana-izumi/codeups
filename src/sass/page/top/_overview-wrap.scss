@@ -2,7 +2,7 @@
 @use "global" as *;
 
 .overview-wrap {
-    margin-top: rem(90);
+    margin-top: rem(72);
 
     @include mq(md){
         margin-top: rem(150);
