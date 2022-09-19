@@ -23,16 +23,6 @@
   color: #333;
   background-color: $white;
   padding: rem(4) rem(24) rem(16);
-
-  &:hover {
-    color: $white;
-    background-color: #333;
-
-    &:not(.blog-card__category) {
-      color: $white;
-      background-color: #333;
-    }
-  }
 }
 
 
@@ -75,4 +65,15 @@
   background-color: #FFEA2E;
   line-height: 1;
   padding: rem(5);
+  color: #333;
+}
+
+
+
+.blog-card__body:not(.blog-card__category) {
+  &:hover {
+    color: $white;
+    background-color: #333;
+    transition:background-color 0.3s;
+  }
 }

@@ -199,14 +199,6 @@ select::-ms-expand {
   padding: 4px 24px 16px;
   padding: 0.25rem 1.5rem 1rem;
 }
-.blog-card__body:hover {
-  color: #fff;
-  background-color: #333;
-}
-.blog-card__body:hover:not(.blog-card__category) {
-  color: #fff;
-  background-color: #333;
-}
 
 .blog-card__title {
   font-size: 18px;
@@ -261,6 +253,14 @@ select::-ms-expand {
   line-height: 1;
   padding: 5px;
   padding: 0.3125rem;
+  color: #333;
+}
+
+.blog-card__body:not(.blog-card__category):hover {
+  color: #fff;
+  background-color: #333;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
 }
 
 .btn {
@@ -925,6 +925,17 @@ select::-ms-expand {
     bottom: 2rem;
     right: 1.9375rem;
   }
+}
+
+rect:hover {
+  fill: #333;
+}
+
+path:hover {
+  stroke: #fff;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .blog-wrap {
