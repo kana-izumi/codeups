@@ -1,6 +1,6 @@
 @charset "UTF-8";
 body {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Noto Sans JP";
 }
 
 body {
@@ -578,7 +578,7 @@ select::-ms-expand {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   color: rgba(249, 248, 113, .2);
-  font-family: "Noto Serif JP", serif;
+  font-family: "Noto Serif JP";
   font-size: 50px;
   font-size: 3.125rem;
   z-index: -1;
@@ -629,7 +629,7 @@ select::-ms-expand {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   color: rgba(249, 248, 113, .2);
-  font-family: "Noto Serif JP", serif;
+  font-family: "Noto Serif JP";
   font-size: 50px;
   font-size: 3.125rem;
   z-index: 1;
@@ -1254,21 +1254,12 @@ path:hover {
   }
 }
 
-.news-inner {
-  padding-left: 20px;
-  padding-left: 1.25rem;
-  padding-right: 20px;
-  padding-right: 1.25rem;
+.slide-img-pc img {
+  display: block;
   width: 100%;
-}
-@media screen and (min-width: 768px) {
-  .news-inner {
-    -webkit-box-sizing: content-box;
-            box-sizing: content-box;
-    max-width: 65.125rem;
-    margin-left: auto;
-    margin-right: auto;
-  }
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .news-wrap {
@@ -1278,6 +1269,24 @@ path:hover {
 @media screen and (min-width: 768px) {
   .news-wrap {
     margin-top: 2.0625rem;
+  }
+}
+
+.news__inner {
+  padding-left: 20px;
+  padding-left: 1.25rem;
+  padding-right: 20px;
+  padding-right: 1.25rem;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .news__inner {
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+    max-width: 65.125rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -1441,7 +1450,7 @@ path:hover {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   color: rgba(249, 248, 113, .2);
-  font-family: "Noto Serif JP", serif;
+  font-family: "Noto Serif JP";
   font-size: 50px;
   font-size: 3.125rem;
   z-index: 1;

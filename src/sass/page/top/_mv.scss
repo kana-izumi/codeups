@@ -49,3 +49,12 @@
     font-size: rem(25);
   }
 }
+
+
+
+.slide-img-pc img {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
