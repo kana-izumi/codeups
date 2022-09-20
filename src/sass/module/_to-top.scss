@@ -13,6 +13,21 @@
   }
 }
 
+.to-top a {
+  background-image: url(/src/images/common/to-top.svg);
+  display: inline-block;
+  width: rem(45);
+  height: rem(45);
+  background-size: cover;
+  transition: all .5s;
+
+  &:hover{
+    background-image: url(/src/images/common/to-top-hover.svg);
+    transition: all .5s;
+  }
+
+}
+
 rect:hover{
   fill: #333;
 
