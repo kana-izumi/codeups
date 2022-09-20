@@ -1301,7 +1301,8 @@ path:hover {
   .news__inner {
     -webkit-box-sizing: content-box;
             box-sizing: content-box;
-    max-width: 1042px;
+    max-width: 65.125rem;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -1327,6 +1328,11 @@ path:hover {
   font-size: 14px;
   font-size: 0.875rem;
 }
+@media screen and (min-width: 768px) {
+  .news__date {
+    font-size: 1rem;
+  }
+}
 
 .news__category {
   margin-left: 26px;
@@ -1342,7 +1348,7 @@ path:hover {
 }
 @media screen and (min-width: 768px) {
   .news__category {
-    margin-left: 2.5625rem;
+    margin-left: 2.75rem;
   }
 }
 
