@@ -38,6 +38,7 @@
 
 .contact__btn {
     margin-top: rem(45);
+    text-align: center;
 
     @include mq(md) {
         margin-top: rem(58);
