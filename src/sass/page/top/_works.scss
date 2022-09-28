@@ -66,29 +66,23 @@
 }
 
 .works__item {
-    position: relative;
-    width: 100%;
-
+    margin: auto;
     @include mq(md) {
         width: 100%;
         max-width: rem(557);
     }
 }
 
-.works__item::before {
-    content: "";
-    display: block;
-    padding-top: 69.83%;
-}
-
-.works__img{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+.works__item img {
     width: 100%;
     height: 100%;
+    max-height: rem(389);
     object-fit: cover;
+    object-position: center;
+
+    @include mq(md) {
+        max-width: rem(557);
+    }
 }
 
 .works__content {
