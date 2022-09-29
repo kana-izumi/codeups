@@ -74,9 +74,11 @@
 
 
 .blog-card__body:not(.blog-card__category) {
+  transition : 1s;
   &:hover {
     color: $white;
     background-color: #333;
     transition:background-color 0.3s;
+    transition : 1s;
   }
 }

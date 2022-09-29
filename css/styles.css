@@ -260,11 +260,17 @@ select::-ms-expand {
   color: #333;
 }
 
+.blog-card__body:not(.blog-card__category) {
+  -webkit-transition: 1s;
+  transition: 1s;
+}
 .blog-card__body:not(.blog-card__category):hover {
   color: #fff;
   background-color: #333;
   -webkit-transition: background-color 0.3s;
   transition: background-color 0.3s;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .btn {
@@ -821,7 +827,6 @@ select::-ms-expand {
 
 .pc-nav__item {
   height: inherit;
-  position: relative;
 }
 .pc-nav__item:not(:last-child) {
   padding: 0 19px;
@@ -841,7 +846,11 @@ select::-ms-expand {
           justify-content: center;
   letter-spacing: 0.02em;
 }
-.pc-nav__item a::after {
+
+.pc-nav__item--hover a {
+  position: relative;
+}
+.pc-nav__item--hover a::after {
   position: absolute;
   content: "";
   width: 70px;
@@ -860,7 +869,7 @@ select::-ms-expand {
   transition: transform 0.3s;
   transition: transform 0.3s, -webkit-transform 0.3s; /*変形の時間*/
 }
-.pc-nav__item a:hover::after {
+.pc-nav__item--hover a:hover::after {
   -webkit-transform: scale(1, 1);
           transform: scale(1, 1); /*ホバー後、x軸方向に1（相対値）伸長*/
 }
@@ -1715,8 +1724,8 @@ path:hover {
 .works__item img {
   width: 100%;
   height: 100%;
-  max-height: 389px;
-  max-height: 24.3125rem;
+  max-height: 261px;
+  max-height: 16.3125rem;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
@@ -1725,6 +1734,7 @@ path:hover {
 @media screen and (min-width: 768px) {
   .works__item img {
     max-width: 34.8125rem;
+    max-height: 24.3125rem;
   }
 }
 
