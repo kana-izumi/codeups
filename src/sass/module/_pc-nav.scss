@@ -61,8 +61,25 @@
   padding-left: rem(35);
 
   &:hover {
-    background-color: #333;
-    transition: ease .3s;
+    // background-color: #333;
+    // transition: ease .3s;
     color: $white;
   }
+}
+
+.pc-nav__item--white::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: $white;
+  width: 100%;
+  height: 100%;
+  transition: transform .6s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  transform: translateX(-100%);
+}
+
+.pc-nav__item--white:hover:before{
+  transform: translateX(0);
 }

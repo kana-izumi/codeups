@@ -284,12 +284,12 @@ select::-ms-expand {
   padding: 0.625rem 7.125rem;
   text-align: center;
   outline: none;
-  -webkit-transition: ease 0.3s;
-  transition: ease 0.3s;
   background-color: #333;
   max-width: 335px;
   max-width: 20.9375rem;
   width: 100%;
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s;
 }
 @media screen and (min-width: 768px) {
   .btn {
@@ -319,7 +319,7 @@ select::-ms-expand {
   color: #333;
 }
 
-.bgleft::before {
+.btn::before {
   content: "";
   position: absolute;
   top: 0;
@@ -332,17 +332,13 @@ select::-ms-expand {
   transition: -webkit-transform 0.6s cubic-bezier(0.8, 0, 0.2, 1) 0s;
   transition: transform 0.6s cubic-bezier(0.8, 0, 0.2, 1) 0s;
   transition: transform 0.6s cubic-bezier(0.8, 0, 0.2, 1) 0s, -webkit-transform 0.6s cubic-bezier(0.8, 0, 0.2, 1) 0s;
-  -webkit-transform: scale(0, 1);
-          transform: scale(0, 1);
-  -webkit-transform-origin: right top;
-          transform-origin: right top;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
 }
 
-.bgleft:hover:before {
-  -webkit-transform-origin: left top;
-          transform-origin: left top;
-  -webkit-transform: scale(1, 1);
-          transform: scale(1, 1);
+.btn:hover:before {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 @media screen and (min-width: 768px) {
@@ -889,10 +885,29 @@ select::-ms-expand {
   padding-left: 2.1875rem;
 }
 .pc-nav__item--white a:hover {
-  background-color: #333;
-  -webkit-transition: ease 0.3s;
-  transition: ease 0.3s;
   color: #fff;
+}
+
+.pc-nav__item--white::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  transition: -webkit-transform 0.6s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  transition: transform 0.6s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  transition: transform 0.6s cubic-bezier(0.8, 0, 0.2, 1) 0s, -webkit-transform 0.6s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.pc-nav__item--white:hover:before {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .sp-footer-nav__item {
@@ -1330,7 +1345,19 @@ path:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
+}
+
+.news__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 227px;
+  max-width: 14.1875rem;
+  width: 100%;
 }
 
 .news__date,
@@ -1380,6 +1407,7 @@ path:hover {
 
 .news__title {
   line-height: 1.45;
+  width: calc(100% - 25.5625rem);
 }
 
 .news__title:hover {
@@ -1396,6 +1424,8 @@ path:hover {
     margin-top: 0;
     margin-top: initial;
     margin-left: 3.125rem;
+    max-width: 11.375rem;
+    width: 100%;
   }
 }
 
@@ -1418,11 +1448,11 @@ path:hover {
   }
 }
 
-.news__btn-text {
+.news__btn-link span {
   font-weight: 500;
 }
 @media screen and (min-width: 768px) {
-  .news__btn-text {
+  .news__btn-link span {
     position: relative;
     z-index: 3;
     font-size: 1rem;
@@ -1431,7 +1461,7 @@ path:hover {
 }
 
 @media screen and (min-width: 768px) {
-  .news__btn-text:hover {
+  .news__btn-link:hover span {
     color: #fff;
   }
 }
@@ -1449,17 +1479,13 @@ path:hover {
   transition: -webkit-transform 0.6s cubic-bezier(0.8, 0, 0.2, 1) 0s;
   transition: transform 0.6s cubic-bezier(0.8, 0, 0.2, 1) 0s;
   transition: transform 0.6s cubic-bezier(0.8, 0, 0.2, 1) 0s, -webkit-transform 0.6s cubic-bezier(0.8, 0, 0.2, 1) 0s;
-  -webkit-transform: scale(0, 1);
-          transform: scale(0, 1);
-  -webkit-transform-origin: right top;
-          transform-origin: right top;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
 }
 
 .news__btn-link:hover:before {
-  -webkit-transform-origin: left top;
-          transform-origin: left top;
-  -webkit-transform: scale(1, 1);
-          transform: scale(1, 1);
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .overview-heading {
@@ -1711,6 +1737,10 @@ path:hover {
   }
 }
 
+.works__images {
+  position: relative;
+}
+
 .works__item {
   margin: auto;
 }
@@ -1721,20 +1751,29 @@ path:hover {
   }
 }
 
-.works__item img {
+.works__img {
+  position: relative;
+  width: 100%;
+}
+
+.works__img::before {
   width: 100%;
   height: 100%;
   max-height: 261px;
   max-height: 16.3125rem;
+  content: "";
+  padding-top: 69.8%;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
 }
 @media screen and (min-width: 768px) {
-  .works__item img {
+  .works__img::before {
     max-width: 34.8125rem;
     max-height: 24.3125rem;
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -1742,9 +1781,5 @@ path:hover {
   .works__content {
     margin-left: 2rem;
   }
-}
-
-.works__images {
-  position: relative;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -30,7 +30,6 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     $(".js-drawer-open").toggleClass("open");
     $(".drawer-menu").toggleClass("open");
     $("html").toggleClass("is-fixed");
-
   });
 
   // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)
