@@ -1,5 +1,5 @@
 {
-  "name": "CodeUps",
+  "name": "codeups",
   "version": "1.0.0",
   "description": "CodeUps専用",
   "main": "index.js",
@@ -29,5 +29,16 @@
   },
   "dependencies": {
     "del": "^6.0.0"
-  }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kana-izumi/codeups.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kana-izumi/codeups/issues"
+  },
+  "homepage": "https://github.com/kana-izumi/codeups#readme"
 }
