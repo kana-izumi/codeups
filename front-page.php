@@ -1,42 +1,4 @@
-<!DOCTYPE html>
-<html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <meta name="format-detection" content="telephone=no" />
-    <!-- meta情報 -->
-    <title>CodeUps課題</title>
-    <meta name="description" content="サイト要約が入ります。" />
-    <meta name="keywords" content="CodeUps" />
-    <meta name="”robots”" content="”noindex”" />
-    <!-- ogp -->
-    <meta property="og:title" content="" />
-    <meta property="og:type" content="" />
-    <meta property="og:url" content="" />
-    <meta property="og:image" content="" />
-    <meta property="og:site_name" content="" />
-    <meta property="og:description" content="" />
-    <!-- ファビコン -->
-    <link rel="”icon”" href="favicon.ico" />
-    <!-- スワイパー -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
-    <!-- googlefont -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&family=Noto+Serif+JP:wght@300;400;700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- css -->
-    <link rel="stylesheet" href="./css/styles.css" />
-    <!-- JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script defer src="./js/script.js"></script>
-  </head>
+<?php get_header(); ?>
   <body>
     <!-- ボタン
   <a href="" class="btn bgleft">
@@ -48,7 +10,7 @@
       <div class="header__inner">
         <h1 class="logo">
           <a href="#" class="logo__link">
-            <img src="./images/common/logo.svg" alt="ヘッダーロゴ" />
+            <img src="<?php echo get_template_directory_uri(); ?>/images/common/logo.svg" alt="ヘッダーロゴ" />
           </a>
         </h1>
         <!-- ドロワー -->
@@ -124,26 +86,26 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="slide-img-sp u-mobile">
-              <img src="./images/top/mv-sp1.jpg" alt="メインビジュアル1" />
+              <img src="<?php echo get_template_directory_uri(); ?>/images/top/mv-sp1.jpg" alt="メインビジュアル1" />
             </div>
             <div class="slide-img-pc u-desktop">
-              <img src="./images/top/mv-pc1.jpg" alt="メインビジュアル1" />
+              <img src="<?php echo get_template_directory_uri(); ?>/images/top/mv-pc1.jpg" alt="メインビジュアル1" />
             </div>
           </div>
           <div class="swiper-slide">
             <div class="slide-img-sp u-mobile">
-              <img src="./images/top/mv-sp2.jpg" alt="メインビジュアル2" />
+              <img src="<?php echo get_template_directory_uri(); ?>/images/top/mv-sp2.jpg" alt="メインビジュアル2" />
             </div>
             <div class="slide-img-pc u-desktop">
-              <img src="./images/top/mv-pc2.jpg" alt="メインビジュアル2" />
+              <img src="<?php echo get_template_directory_uri(); ?>/images/top/mv-pc2.jpg" alt="メインビジュアル2" />
             </div>
           </div>
           <div class="swiper-slide">
             <div class="slide-img-sp u-mobile">
-              <img src="./images/top/mv-sp3.jpg" alt="メインビジュアル3" />
+              <img src="<?php echo get_template_directory_uri(); ?>/images/top/mv-sp3.jpg" alt="メインビジュアル3" />
             </div>
             <div class="slide-img-pc u-desktop">
-              <img src="./images/top/mv-pc3.png" alt="メインビジュアル3" />
+              <img src="<?php echo get_template_directory_uri(); ?>/images/top/mv-pc3.png" alt="メインビジュアル3" />
             </div>
           </div>
         </div>
@@ -188,25 +150,25 @@
         <div class="content__items">
           <div class="content__item">
             <a href="">
-              <img src="./images/top/content1.jpg" alt="経営理念ページへ" />
+              <img src="<?php echo get_template_directory_uri(); ?>/images/top/content1.jpg" alt="経営理念ページへ" />
               <p class="content__text">経営理念ページへ</p>
             </a>
           </div>
           <div class="content__item">
             <a href="">
-              <img src="./images/top/content2.jpg" alt="理念1へ" />
+              <img src="<?php echo get_template_directory_uri(); ?>/images/top/content2.jpg" alt="理念1へ" />
               <p class="content__text">理念1へ</p>
             </a>
           </div>
           <div class="content__item">
             <a href="">
-              <img src="./images/top/content3.jpg" alt="理念2へ" />
+              <img src="<?php echo get_template_directory_uri(); ?>/images/top/content3.jpg" alt="理念2へ" />
               <p class="content__text">理念2へ</p>
             </a>
           </div>
           <div class="content__item">
             <a href="">
-              <img src="./images/top/content4.jpg" alt="理念3へ" />
+              <img src="<?php echo get_template_directory_uri(); ?>/images/top/content4.jpg" alt="理念3へ" />
               <p class="content__text">理念3へ</p>
             </a>
           </div>
@@ -231,21 +193,21 @@
                   <div class="swiper-slide">
                     <div class="works__item">
                       <div class="works__img">
-                        <img src="./images/top/works1.jpg" alt="制作実績" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/top/works1.jpg" alt="制作実績" />
                       </div>
                     </div>
                   </div>
                   <div class="swiper-slide">
                     <div class="works__item">
                       <div class="works__img">
-                        <img src="./images/top/works2.jpg" alt="制作実績" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/top/works2.jpg" alt="制作実績" />
                       </div>
                     </div>
                   </div>
                   <div class="swiper-slide">
                     <div class="works__item">
                       <div class="works__img">
-                        <img src="./images/top/works3.jpg" alt="制作実績" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/top/works3.jpg" alt="制作実績" />
                       </div>
                     </div>
                   </div>
@@ -285,7 +247,7 @@
           <div class="overview__items">
             <div class="overview__item">
               <div class="overview__img">
-                <img src="./images/top/overview.jpg" alt="企業概要" />
+                <img src="<?php echo get_template_directory_uri(); ?>/images/top/overview.jpg" alt="企業概要" />
               </div>
               <div class="overview__content item__content">
                 <div class="overview__text-block item__text-block">
@@ -318,7 +280,7 @@
         <div class="blog__items card-list">
           <a href="" class="blog-card card-list__item new-icon">
             <figure class="blog-card__img">
-              <img src="./images/top/blog1.jpg" alt="ブログ" />
+              <img src="<?php echo get_template_directory_uri(); ?>/images/top/blog1.jpg" alt="ブログ" />
             </figure>
             <div class="blog-card__body">
               <div class="blog-card__title">
@@ -337,7 +299,7 @@
           </a>
           <a href="" class="blog-card card-list__item">
             <figure class="blog-card__img">
-              <img src="./images/top/blog2.jpg" alt="ブログ" />
+              <img src="<?php echo get_template_directory_uri(); ?>/images/top/blog2.jpg" alt="ブログ" />
             </figure>
             <div class="blog-card__body">
               <div class="blog-card__title">
@@ -356,7 +318,7 @@
           </a>
           <a href="" class="blog-card card-list__item">
             <figure class="blog-card__img">
-              <img src="./images/top/blog3.jpg" alt="ブログ" />
+              <img src="<?php echo get_template_directory_uri(); ?>/images/top/blog3.jpg" alt="ブログ" />
             </figure>
             <div class="blog-card__body">
               <div class="blog-card__title">
@@ -402,66 +364,4 @@
       </div>
     </section>
 
-    <!-- フッター -->
-    <footer class="footer footer-wrap">
-      <div class="footer__inner">
-        <div class="footer__logo">
-          <a href="#">
-            <img src="./images/common/logo.svg" alt="フッターロゴ" />
-          </a>
-        </div>
-        <div class="sp-footer-nav u-mobile">
-          <ul class="sp-footer-nav__items">
-            <li class="sp-footer-nav__item">
-              <a href="">トップ</a>
-            </li>
-            <li class="sp-footer-nav__item">
-              <a href="">お知らせ</a>
-            </li>
-            <li class="sp-footer-nav__item">
-              <a href="">事業内容</a>
-            </li>
-            <li class="sp-footer-nav__item">
-              <a href="">企業概要</a>
-            </li>
-            <li class="sp-footer-nav__item">
-              <a href="">ブログ</a>
-            </li>
-            <li class="sp-footer-nav__item">
-              <a href="">お問い合わせ</a>
-            </li>
-          </ul>
-        </div>
-        <div class="pc-footer-nav u-desktop">
-          <ul class="pc-footer-nav__items">
-            <li class="pc-footer-nav__item">
-              <a href="">お知らせ</a>
-            </li>
-            <li class="pc-footer-nav__item">
-              <a href="">事業内容</a>
-            </li>
-            <li class="pc-footer-nav__item">
-              <a href="">制作実績</a>
-            </li>
-            <li class="pc-footer-nav__item">
-              <a href="">企業概要</a>
-            </li>
-            <li class="pc-footer-nav__item">
-              <a href="">自社メディア</a>
-            </li>
-            <li class="pc-footer-nav__item">
-              <a href="">お問い合わせ</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="copyright">
-        <small> &copy; 2021 CodeUps Inc.</small>
-      </div>
-    </footer>
-    <!-- トップへ戻る -->
-    <div class="to-top">
-      <a href="#"></a>
-    </div>
-  </body>
-</html>
+<?php get_footer(); ?>
