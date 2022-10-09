@@ -20,17 +20,11 @@
       wp_deregister_script('jquery');
       // jQueryの読み込み
       wp_enqueue_script( 'jquery', '//code.jquery.com/jquery-3.6.0.min.js', "", "1.0.1" );
-      // Google Fonts(2つ以上ある場合は1つずつ書く)
-      wp_enqueue_style( 'NotoSans', '//fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap' );
-      wp_enqueue_style( 'Lexend', '//fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;500&display=swap' );
+      // // Google Fonts(2つ以上ある場合は1つずつ書く)
+      // wp_enqueue_style( 'NotoSans', '//fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap' );
+      // wp_enqueue_style( 'Lexend', '//fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;500&display=swap' );
       // micromodal
       wp_enqueue_script( 'micromodal', '//unpkg.com/micromodal/dist/micromodal.min.js', "", "1.0.1" );
-			// google maps
-			// wp_enqueue_script( 'map', '//maps.googleapis.com/maps/api/js?key=APIキーを入れます', "", "1.0.1", false );
-	// 		// slick
-    //   wp_enqueue_script( 'slick', '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js', "", "1.0.1", false );
-    //   wp_enqueue_style( 'slick',  '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css', "", "1.0.1", false );
-    //   wp_enqueue_style( 'slick-theme',  '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css', array(), '1.0.1', false );
       // swiper
       wp_enqueue_script( 'swiper', '//unpkg.com/swiper@8/swiper-bundle.min.js', "", "1.0.1", false );
       wp_enqueue_style( 'swiper', '//unpkg.com/swiper@8/swiper-bundle.min.css', "", "1.0.1", false );

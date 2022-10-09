@@ -1,81 +1,4 @@
 <?php get_header(); ?>
-  <body>
-    <!-- ボタン
-  <a href="" class="btn bgleft">
-    <span>詳しく見る</span>
-  </a> -->
-
-    <!-- ヘッダー -->
-    <header class="header js-header">
-      <div class="header__inner">
-        <h1 class="logo">
-          <a href="#" class="logo__link">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/common/logo.svg" alt="ヘッダーロゴ" />
-          </a>
-        </h1>
-        <!-- ドロワー -->
-        <div class="drawer js-drawer u-mobile">
-          <div class="drawer__icon js-drawer-open">
-            <div class="drawer__icon-bar1"><a href=""></a></div>
-            <div class="drawer__icon-bar2"><a href=""></a></div>
-            <div class="drawer__icon-bar3"><a href=""></a></div>
-          </div>
-        </div>
-
-        <!-- spナビ -->
-        <div class="sp-nav drawer-menu">
-          <ul class="sp-nav__items">
-            <li class="sp-nav__item">
-              <a href="/">トップ</a>
-            </li>
-            <li class="sp-nav__item">
-              <a href="#news">お知らせ</a>
-            </li>
-            <li class="sp-nav__item">
-              <a href="#content">事業内容</a>
-            </li>
-            <li class="sp-nav__item">
-              <a href="#works">制作実績</a>
-            </li>
-            <li class="sp-nav__item">
-              <a href="#overview">企業概要</a>
-            </li>
-            <li class="sp-nav__item">
-              <a href="#blog">ブログ</a>
-            </li>
-            <li class="sp-nav__item">
-              <a href="#contact">お問い合わせ</a>
-            </li>
-          </ul>
-        </div>
-
-        <!-- pcナビ -->
-        <div class="pc-nav u-desktop">
-          <ul class="pc-nav__items">
-            <li class="pc-nav__item pc-nav__item--hover">
-              <a href="#news">お知らせ</a>
-            </li>
-            <li class="pc-nav__item pc-nav__item--hover">
-              <a href="#content">事業内容</a>
-            </li>
-            <li class="pc-nav__item pc-nav__item--hover">
-              <a href="#works">制作実績</a>
-            </li>
-            <li class="pc-nav__item pc-nav__item--hover">
-              <a href="#overview">企業概要</a>
-            </li>
-            <li class="pc-nav__item pc-nav__item--hover">
-              <a href="#blog">ブログ</a>
-            </li>
-            <li class="pc-nav__item pc-nav__item--white">
-              <a href="#contact">
-                <span>お問い合わせ<span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </header>
     <!-- メインビジュアル -->
     <div class="mv">
       <div class="mv__heading">
@@ -121,9 +44,9 @@
               <span class="news__category">お知らせ</span>
             </div>
             <div class="news__text">
-              <a href="" class="news__title"
-                >記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。</a
-              >
+              <a href="" class="news__title">
+                記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。
+              </a>
             </div>
             <div class="news__btn u-mobile">
               <a href="" class="btn">
