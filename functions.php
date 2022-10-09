@@ -52,3 +52,10 @@
       return $init_array;
     }
   );
+  // カスタムメニュー機能
+  register_nav_menus(
+    array(
+      'place_global' => 'ヘッダー',
+      'place_footer' => 'フッター',
+    )
+    );
